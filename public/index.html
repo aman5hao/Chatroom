@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>chatroom</title>
+    <link rel="stylesheet" type="text/css" href="/css/master.css">
+</head>
+<body>
+    <div id='loginPage'>
+        <div id='loginarea'>
+            <input type="text" placeholder="请输入用户名" id="username" />
+            <button id="btnSetUsername">开始聊天</button>          
+        </div>
+    </div>
+    <div id='chatPage'>
+        <div class="wrapperChat">
+            <ul id='messagelist'></ul>
+            <div id='inputarea'>
+                <input type="text" placeholder="请输入想要发送的信息" id="msg" />
+                <button id="btnSendMessage">send</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/master.js"></script>
+    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+</body>
+</html>
